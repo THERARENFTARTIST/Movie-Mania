@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - MovieMania</title>
+    <link rel="stylesheet" href="/static/css/profile.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="profile-container">
+        <!-- Navbar -->
+        <nav class="navbar">
+            <div class="navbar-left">
+                <h1 class="logo">MovieMania</h1>
+            </div>
+            <div class="navbar-right">
+                <a href="/movies" class="nav-link">Movies</a>
+                <a href="/logout" class="nav-link">Logout</a>
+            </div>
+        </nav>
+
+        <!-- Profile Section -->
+        <section class="profile-section">
+            <div class="profile-header">
+                <h1 class="profile-title">My Profile</h1>
+                <div class="profile-info">
+                    <h2>{{ username }}</h2>
+                    <p>Email: {{ email }}</p>
+                </div>
+            </div>
+
+            <div class="profile-buttons">
+                <button id="view-bookings-btn" class="profile-btn" onclick="window.location.href='/view_bookings'">View Bookings</button>
+            </div>
+        </section>
+    </div>
+    <script src="/static/js/profile.js" defer></script>
+</body>
+</html>

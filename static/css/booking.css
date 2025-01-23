@@ -1,0 +1,158 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212; /* Netflix-like dark theme */
+    color: #e5e5e5; /* Light text for contrast */
+}
+
+h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #181818; /* Netflix navbar color */
+    color: #e5e5e5;
+    padding: 10px 20px;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #e50914; /* Netflix red */
+}
+
+.navbar .nav-link {
+    margin-left: 20px;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #e5e5e5;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+    color: #e50914;
+}
+
+/* Booking Section Styles */
+.booking-container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #181818; /* Dark card background */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
+    border: 1px solid #333; /* Subtle border for depth */
+}
+
+.booking-title {
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #e5e5e5;
+}
+
+.movie-details {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.movie-details h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.movie-details p {
+    font-size: 1rem;
+    color: #b3b3b3; /* Subdued text */
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 5px;
+    color: #e5e5e5;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    background-color: #333;
+    color: #e5e5e5;
+    border: 1px solid #444;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: #e50914; /* Netflix red focus */
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.btn-primary, .btn-secondary, .btn-tertiary {
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 500;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #e50914; /* Netflix red */
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #b00610; /* Slightly darker on hover */
+}
+
+.btn-secondary {
+    background-color: #333;
+    color: #e5e5e5;
+}
+
+.btn-secondary:hover {
+    background-color: #444;
+}
+
+.btn-tertiary {
+    background-color: #e67e22;
+    color: #fff;
+}
+
+.btn-tertiary:hover {
+    background-color: #d35400;
+}

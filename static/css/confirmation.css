@@ -1,0 +1,121 @@
+/* General styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212; /* Netflix dark background */
+    color: #fff;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #141414; /* Netflix navbar dark color */
+    color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.navbar .logo {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #e50914; /* Netflix red */
+}
+
+.navbar .nav-link {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+    color: #e50914;
+}
+
+.confirmation-container {
+    text-align: center;
+    padding: 2rem;
+    background-color: #1e1e1e; /* Dark card background */
+    max-width: 800px;
+    margin: 2rem auto;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    border: 1px solid #333; /* Subtle border */
+}
+
+.confirmation-title {
+    font-size: 2.4rem;
+    color: #e50914; /* Netflix red */
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.confirmation-section p {
+    font-size: 1.2rem;
+    color: #bbb; /* Light gray text */
+    margin-bottom: 2rem;
+}
+
+.booking-details {
+    text-align: left;
+    margin: 0 auto;
+    max-width: 500px;
+    background-color: #2b2b2b; /* Slightly lighter dark */
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+    border: 1px solid #444;
+}
+
+.booking-details h2 {
+    color: #fff;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+.booking-details p {
+    font-size: 1rem;
+    color: #bbb;
+    margin-bottom: 0.5rem;
+}
+
+.confirmation-actions {
+    margin-top: 2rem;
+}
+
+.btn-primary, .btn-secondary {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-primary {
+    background-color: #e50914; /* Netflix red */
+    color: #fff;
+    font-weight: 600;
+    margin-right: 1rem;
+}
+
+.btn-primary:hover {
+    background-color: #bf0810; /* Slightly darker red */
+    transform: scale(1.05);
+}
+
+.btn-secondary {
+    background-color: #333; /* Netflix dark gray */
+    color: #fff;
+    font-weight: 600;
+}
+
+.btn-secondary:hover {
+    background-color: #444; /* Slightly lighter gray */
+    transform: scale(1.05);
+}

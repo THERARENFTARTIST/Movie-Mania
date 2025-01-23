@@ -1,0 +1,102 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #141414; /* Netflix-like dark background */
+    color: #f5f5f5; /* Light text for better contrast */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #333; /* Consistent navbar background */
+    color: #fff;
+}
+
+.navbar .logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.navbar .nav-link {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+    color: #e50914; /* Netflix red hover effect */
+}
+
+.bookings-section {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 2rem auto;
+    background-color: #222; /* Netflix dark panel color */
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.section-title {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    color: #e50914; /* Netflix red title */
+    font-weight: 700;
+}
+
+.bookings-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+.bookings-table th, .bookings-table td {
+    text-align: left;
+    padding: 1rem;
+    border: 1px solid #333;
+}
+
+.bookings-table th {
+    background-color: #444;
+    color: #e50914; /* Netflix red for table headers */
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.bookings-table tr:nth-child(even) {
+    background-color: #333; /* Subtle row contrast */
+}
+
+.bookings-table tr:hover {
+    background-color: #444; /* Highlight row on hover */
+    cursor: pointer;
+}
+
+.no-bookings {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #aaa; /* Subtle text for no bookings message */
+    margin-top: 2rem;
+}
+
+button {
+    background-color: #e50914;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #f40612; /* Slightly lighter Netflix red */
+}

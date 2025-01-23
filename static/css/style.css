@@ -1,0 +1,137 @@
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    background-color: #000;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    height: 100vh;
+    background: url('/static/images/hero-background.jpg') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-section .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background: #e50914;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn.secondary {
+    background: rgba(255, 255, 255, 0.3);
+    border: 1px solid #fff;
+}
+
+.btn.large {
+    font-size: 1.2rem;
+}
+
+.btn:hover {
+    background: #f40612;
+}
+
+/* Navbar */
+.navbar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 50px;
+    z-index: 2;
+}
+
+.navbar .logo {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #e50914; /* Optional: Netflix-inspired red */
+    text-transform: uppercase; /* Optional: Makes text all uppercase */
+    letter-spacing: 2px; /* Optional: Adds spacing between letters */
+}
+
+.menu {
+    position: absolute;
+    right: 50px; 
+    display: flex;
+    gap: 15px;
+}
+
+/* About Section */
+.about-section {
+    background: #111;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.about-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Footer */
+footer {
+    background: #111;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.9rem;
+    border-top: 1px solid #444;
+}
+

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Confirmation - MovieMania</title>
+    <link rel="stylesheet" href="/static/css/confirmation.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="confirmation-container">
+        <!-- Navbar -->
+        <nav class="navbar">
+            <div class="navbar-left">
+                <h1 class="logo">MovieMania</h1>
+            </div>
+            <div class="navbar-right">
+                <a href="/movies" class="nav-link">Movies</a>
+                <a href="/profile" class="nav-link">Profile</a>
+                <a href="/logout" class="nav-link">Logout</a>
+            </div>
+        </nav>
+
+        <!-- Confirmation Message -->
+        <section class="confirmation-section">
+            <h1 class="confirmation-title">Booking Confirmed!</h1>
+            <p>Thank you for booking with MovieMania. Here are your booking details:</p>
+            <div class="booking-details">
+                <h2>{{ booking.movie_name }}</h2>
+                <p><strong>Date:</strong> {{ booking.booking_date }}</p>
+                <p><strong>Time:</strong> {{ booking.booking_time }}</p>
+                <p><strong>Tickets:</strong> {{ booking.tickets }}</p>
+            </div>
+            <div class="confirmation-actions">
+                <a href="/movies" class="btn-primary">Browse More Movies</a>
+                <a href="/profile" class="btn-secondary">View Your Profile</a>
+            </div>
+        </section>
+    </div>
+    <script src="/static/js/confirmation.js" defer></script>
+</body>
+</html>

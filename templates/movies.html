@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies - MovieMania</title>
+    <link rel="stylesheet" href="/static/css/movies.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="/static/js/logout.js"></script>
+</head>
+<body>
+    <div class="movies-container">
+        <!-- Navbar -->
+        <nav class="navbar">
+            <div class="navbar-left">
+                <h1 class="logo">MovieMania</h1>
+            </div>
+            <div class="navbar-right">
+                <a href="/profile" class="nav-link">Profile</a>
+                <a id="logout-btn" href="/logout" class="nav-link">Logout</a>
+            </div>
+        </nav>
+
+        <!-- Header -->
+        <header class="header">
+            <h1>Browse Movies by Genre</h1>
+        </header>
+
+        <!-- Genre: Action -->
+        <section class="genre-section">
+            <h2>Action</h2>
+            <div class="movies-grid">
+                <div class="movie-card">
+                    <img src="/static/images/movie1.jpg" alt="Inception">
+                    <h2>Inception</h2>
+                    <p>A mind-bending thriller where a thief enters dreams to steal secrets but faces his greatest challenge yet.</p>
+                    <a href="/booking/1" class="book-now-btn">Book Now</a>
+                </div>
+                <div class="movie-card">
+                    <img src="/static/images/movie2.jpg" alt="Avengers: Endgame">
+                    <h2>Avengers: Endgame</h2>
+                    <p>The ultimate battle for the universe as the Avengers assemble to undo the damage caused by Thanos.</p>
+                    <a href="/booking/2" class="book-now-btn">Book Now</a>
+                </div>
+                <div class="movie-card">
+                    <img src="/static/images/movie3.jpg" alt="The Dark Knight">
+                    <h2>The Dark Knight</h2>
+                    <p>Batman faces his greatest foe, the Joker, in a tale of chaos and heroism in Gotham City.</p>
+                    <a href="/booking/3" class="book-now-btn">Book Now</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Genre: Adventure -->
+        <section class="genre-section">
+            <h2>Adventure</h2>
+            <div class="movies-grid">
+                <div class="movie-card">
+                    <img src="/static/images/movie4.jpg" alt="Toy Story 4">
+                    <h2>Toy Story 4</h2>
+                    <p>Woody and Buzz embark on a heartfelt journey to rescue a new toy and discover their own destinies.</p>
+                    <a href="/booking/4" class="book-now-btn">Book Now</a>
+                </div>
+                <div class="movie-card">
+                    <img src="/static/images/movie5.jpg" alt="The Lord of the Rings">
+                    <h2>The Lord of the Rings</h2>
+                    <p>Frodo and the Fellowship embark on an epic journey to destroy the One Ring and save Middle-earth.</p>
+                    <a href="/booking/5" class="book-now-btn">Book Now</a>
+                </div>
+                <div class="movie-card">
+                    <img src="/static/images/movie6.jpg" alt="Jurassic Park">
+                    <h2>Jurassic Park</h2>
+                    <p>A thrilling adventure in a dinosaur-filled park where science goes horribly wrong.</p>
+                    <a href="/booking/6" class="book-now-btn">Book Now</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Genre: Comedy -->
+        <section class="genre-section">
+            <h2>Comedy</h2>
+            <div class="movies-grid">
+                <div class="movie-card">
+                    <img src="/static/images/movie7.jpg" alt="The Hangover">
+                    <h2>The Hangover</h2>
+                    <p>A group of friends wakes up in Vegas with no memory of the previous night and a missing groom.</p>
+                    <a href="/booking/7" class="book-now-btn">Book Now</a>
+                </div>
+                <div class="movie-card">
+                    <img src="/static/images/movie8.jpg" alt="Superbad">
+                    <h2>Superbad</h2>
+                    <p>Two high school friends aim to make their mark at a party before graduation night spirals out of control.</p>
+                    <a href="/booking/8" class="book-now-btn">Book Now</a>
+                </div>
+                <div class="movie-card">
+                    <img src="/static/images/movie9.jpg" alt="21 Jump Street">
+                    <h2>21 Jump Street</h2>
+                    <p>Two undercover cops return to high school to bust a drug ring in this hilarious comedy.</p>
+                    <a href="/booking/9" class="book-now-btn">Book Now</a>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

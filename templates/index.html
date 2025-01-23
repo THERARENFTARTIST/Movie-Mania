@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Movie Booking</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="/static/js/checkLogin.js" defer></script>
+</head>
+<body data-is-logged-in="{{ 'true' if 'user_id' in session else 'false' }}">
+    <!-- Hero Section -->
+    <div class="hero-section">
+        <div class="overlay"></div>
+        <nav class="navbar">
+            <div class="logo">MovieMania</div>
+            <div class="menu">
+                <a href="/login" class="btn">Login</a>
+                <a href="/signup" class="btn secondary">Sign Up</a>
+            </div>
+        </nav>
+        <div class="hero-content">
+            <h1>Unlimited Movies, Anytime, Anywhere</h1>
+            <p>Discover and book tickets for your favorite movies now!</p>
+            <div class="cta-buttons">
+                <a href="/movies" class="btn large" id="browseMoviesBtn">Browse Movies</a>
+                <a href="#about" class="btn secondary large">Learn More</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="content">
+            <h2>Why Choose MovieMania?</h2>
+            <p>With MovieMania, you get access to the latest blockbusters, a seamless booking experience, and unbeatable comfort. Book your tickets and get ready for the ultimate movie experience.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 MovieMania. All rights reserved.</p>
+    </footer>
+</body>
+</html>

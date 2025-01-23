@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking - MovieMania</title>
+    <link rel="stylesheet" href="/static/css/booking.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="booking-container">
+        <!-- Navbar -->
+        <nav class="navbar">
+            <div class="navbar-left">
+                <h1 class="logo">MovieMania</h1>
+            </div>
+            <div class="navbar-right">
+                <a href="/movies" class="nav-link">Movies</a>
+                <a href="/profile" class="nav-link">Profile</a>
+                <a href="/logout" class="nav-link">Logout</a>
+            </div>
+        </nav>
+
+        <!-- Booking Form Section -->
+        <section class="booking-section">
+            <h1 class="booking-title">Book Your Tickets</h1>
+            <form id="booking-form" action="/book" method="POST">
+                <!-- Movie Details -->
+                <div class="movie-details">
+                    <h2>{{ movie_name }}</h2>
+                    <p>{{ movie_description }}</p>
+                    <input type="hidden" name="movie_id" value="{{ movie_id }}">
+                </div>
+
+                <!-- Booking Inputs -->
+                <div class="form-group">
+                    <label for="date">Select Date:</label>
+                    <input type="date" id="date" name="date" required aria-label="Select a date for the movie">
+                </div>
+                <div class="form-group">
+                    <label for="time">Select Time:</label>
+                    <select id="time" name="time" required aria-label="Select a time slot">
+                        <option value="" disabled selected>Choose a time slot</option>
+                        <option value="10:00">10:00 AM - Morning</option>
+                        <option value="13:00">1:00 PM - Afternoon</option>
+                        <option value="16:00">4:00 PM - Evening</option>
+                        <option value="19:00">7:00 PM - Night</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="tickets">Number of Tickets:</label>
+                    <input type="number" id="tickets" name="tickets" min="1" max="10" required placeholder="Enter number of tickets" aria-label="Number of tickets">
+                </div>
+                <div class="form-buttons">
+                    <button type="submit" class="btn-primary">Book Now</button>
+                    <a href="/movies" class="btn-secondary">Cancel</a>
+                    <a href="/movies" class="btn-tertiary">Back to Movies</a>
+                </div>
+            </form>
+        </section>
+    </div>
+    <script src="/static/js/booking.js" defer></script>
+</body>
+</html>

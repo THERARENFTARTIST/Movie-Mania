@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Bookings - MovieMania</title>
+    <link rel="stylesheet" href="/static/css/view_bookings.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="bookings-container">
+        <!-- Navbar -->
+        <nav class="navbar">
+            <div class="navbar-left">
+                <h1 class="logo">MovieMania</h1>
+            </div>
+            <div class="navbar-right">
+                <a href="/movies" class="nav-link">Movies</a>
+                <a href="/profile" class="nav-link">Profile</a>
+                <a href="/logout" class="nav-link">Logout</a>
+            </div>
+        </nav>
+
+        <!-- Bookings Section -->
+        <section class="bookings-section">
+            <h1 class="section-title">My Bookings</h1>
+            {% if bookings %}
+            <table class="bookings-table">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Movie Name</th>
+                        <th>Date</th>
+                        <th>Time</th>
+                        <th>Tickets</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for booking in bookings %}
+                    <tr>
+                        <td>{{ booking.id }}</td>
+                        <td>{{ booking.movie_name }}</td>
+                        <td>{{ booking.booking_date }}</td>
+                        <td>{{ booking.booking_time }}</td>
+                        <td>{{ booking.tickets }}</td>
+                        <td>{{ booking.status }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+            {% else %}
+            <p class="no-bookings">You have no bookings yet.</p>
+            {% endif %}
+        </section>
+    </div>
+</body>
+</html>
