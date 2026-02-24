@@ -10,7 +10,7 @@ def get_db_connection():
     return mysql.connector.connect(
         host="moviebooking.c38664csc4vd.ap-south-1.rds.amazonaws.com",  # RDS endpoint
         user="root",  # Master username for RDS
-        password="8111arnavavni",  # Master password for RDS
+        password="password",  # Master password for RDS
         database="moviebooking"  # Name of the database created in RDS
     )
 
